@@ -1,0 +1,26 @@
+.containerGeral{
+    Display:grid;
+    Grid-template-columns: 2fr 1fr; /*2 colunas (1 primeira com 2 fracao e a segunda com 1*/
+    Grid-template-areas: "header header"
+                        "main aside"
+                        "footer footer";
+}
+.containerGeral header{
+    Grid-area: header;
+
+}
+.containerGeral main{
+    Grid-area: main;
+    background: rgb(136, 136, 218);
+    
+}
+.containerGeral aside{
+    Grid-area: aside;
+    background: rgb(170, 212, 114);
+    
+}
+.containerGeral footer{
+    Grid-area: footer;
+    background: rgb(236, 87, 68);
+    
+}

@@ -1,0 +1,121 @@
+
+main{
+    display: flex;
+    justify-content: end;
+}
+.subContainer{
+    width: 85%;
+    padding: 20px 0 20px 0;
+    border: solid 2px red;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    Grid-template-areas: "col1 col2"
+                        "col3 col3";
+    grid-gap: 10px;
+}
+.col1{
+    grid-area: col1;
+    border: solid 2px red;
+}
+.col2{
+    grid-area: col2;
+    border: solid 2px red;
+}
+.col3{
+    grid-area: col3;
+    border: solid 2px red;
+}
+
+/* COLUNA 1 DO MAIN */
+.novoProje{
+    width: 100%;
+    height: 300px;
+    max-width: 340px;
+    min-width: 280px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.novoProje article{
+    text-align: center;
+}
+.novoProje article h2{
+    margin-bottom: 60px;
+}
+.novoProje article a{
+    padding: 20px 30px;
+    background: orange;
+    font-size: 1.3rem;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    color: antiquewhite;
+}
+
+
+/* COLUNA 2 DO MAIN */
+.projRegistrado{
+    width: 100%;
+    padding: 10px 0 0 10px;
+    height: 300px;
+    min-width: 280px;
+    background: white;
+}
+.subProjRegistrado{
+    width: 100%;
+    height: 100%;
+}
+.subProjRegistrado h2{
+    margin-bottom: 20px;
+}
+.caixaScroll{
+    height: 200px;
+    overflow-y: auto;
+}
+.caixaScroll article{
+    display: flex;
+    padding: 0 20px 0 0;
+    justify-content: space-between;
+}
+.caixaScroll article label{
+    display: flex;
+    gap: 20px;
+}
+.caixaScroll article label button{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.btnDelete{
+    font-size: 25px;
+    color: red;
+}
+.btnEdit{
+    font-size: 25px;
+    color: rgb(23, 143, 23);
+}
+.caixaScroll p{
+    margin-bottom: 5px;
+}
+
+
+/* COLUNA 3 DO MAIN */
+.projetos{
+    width: 100%;
+    background: white;
+}
+.projetos div{
+    padding: 20px  0 20px 20px;
+}
+.listaProjetos{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    overflow-x: auto;
+    grid-gap: 10px;
+}
+.listaProjetos div{
+    width: 200px;
+    height: 200px;
+    background: rgb(91, 180, 231);
+}
